@@ -6,8 +6,8 @@ embedded_instances {
   "  id: \"level\"\n"
   "  component: \"/game/level.tilemap\"\n"
   "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
+  "    x: -244.0\n"
+  "    y: 130.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -19,8 +19,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -736.0
-    y: -20.0
+    x: -696.0
+    y: -160.0
     z: 0.0
   }
   rotation {

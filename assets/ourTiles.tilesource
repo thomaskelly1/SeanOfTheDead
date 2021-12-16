@@ -1,6 +1,6 @@
 image: "/assets/Images/tilesheet_complete.png"
-tile_width: 64
-tile_height: 64
+tile_width: 54
+tile_height: 54
 tile_margin: 0
 tile_spacing: 0
 collision: ""
