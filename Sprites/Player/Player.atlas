@@ -1,89 +1,27 @@
 animations {
   id: "idle"
   images {
-    image: "/Assets/Sean/idle-1.png"
+    image: "/assets/Sean/idle/idle-1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/Assets/Sean/idle-2.png"
+    image: "/assets/Sean/idle/idle-2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/Assets/Sean/idle-3.png"
+    image: "/assets/Sean/idle/idle-3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/Assets/Sean/idle-4.png"
+    image: "/assets/Sean/idle/idle-4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/Assets/Sean/idle-5.png"
+    image: "/assets/Sean/idle/idle-5.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "right"
-  images {
-    image: "/Assets/Sean/walk-R-1.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-R-2.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-R-3.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-R-4.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-R-5.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-R-6.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "left"
-  images {
-    image: "/Assets/Sean/walk-L-1.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-L-2.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-L-3.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-L-4.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-L-5.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/Assets/Sean/walk-L-6.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
+  fps: 12
   flip_horizontal: 0
   flip_vertical: 0
 }
