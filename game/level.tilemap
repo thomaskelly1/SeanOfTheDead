@@ -2408,6 +2408,20 @@ layers {
   z: 2.0
   is_visible: 1
   cell {
+    x: 42
+    y: -18
+    tile: 108
+    h_flip: 0
+    v_flip: 0
+  }
+  cell {
+    x: 42
+    y: -17
+    tile: 108
+    h_flip: 0
+    v_flip: 0
+  }
+  cell {
     x: 28
     y: -4
     tile: 108
