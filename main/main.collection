@@ -26,6 +26,13 @@ embedded_instances {
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
+  id: "level"
+  data: "components {\n"
+  "  id: \"level\"\n"
+  "  component: \"/game/level.tilemap\"\n"
+  "  position {\n"
+  "    x: -244.0\n"
+  "    y: 130.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -36,6 +43,26 @@ embedded_instances {
   "  }\n"
   "}\n"
   ""
+  position {
+    x: -696.0
+    y: -160.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "player"
+  data: ""
   position {
     x: 0.0
     y: 0.0
@@ -79,6 +106,8 @@ embedded_instances {
   "  }\n"
   "}\n"
   ""
+  id: "enemy"
+  data: ""
   position {
     x: 0.0
     y: 0.0
