@@ -5,7 +5,7 @@ tile_margin: 0
 tile_spacing: 0
 collision: ""
 material_tag: "tile"
-collision_groups: "default"
+collision_groups: "New Collision Group"
 animations {
   id: "anim"
   start_tile: 1
