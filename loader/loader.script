@@ -1,0 +1,34 @@
+local function load_start_menu(self)
+	msg.post("go#start-game", "load")
+	msg.post("go#start-game", "enable")
+end
+local function unload_start_menu(self)
+	msg.post("go#start-game","unload")
+end
+local function load_main_menu(self)
+	msg.post("go#mainmenu", "load")
+	msg.post("go#mainmenu", "enable")
+end
+local function unload_main_menu(self)
+	msg.post("go#mainmenu", "unload")
+end
+local function load_main(self)
+	msg.post("go#main", "load")
+	msg.post("go#main", "enable")
+end
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	load_start_menu(self)
+end
+function on_message(self, message_id, message, sender)
+	if message_id == hash("CONTINUE") then
+		print("Inside loader - Space entered on start screen")
+		unload_start_menu(self)
+		load_main_menu(self)
+	end
+	if message_id == hash("start_game") then
+		io.write("Inside loader - Start game request")
+		unload_main_menu(self)
+		load_main(self)
+	end
+end

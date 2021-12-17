@@ -14,6 +14,10 @@ images {
   image: "/assets/start-menu/foreground/fence_graveyard_6.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/assets/start-menu/background/main-menu-bg.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "press_any_key_to_continue_text"
   images {
