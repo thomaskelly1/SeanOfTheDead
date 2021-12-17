@@ -3,8 +3,8 @@ instances {
   id: "player"
   prototype: "/assets/player/player.go"
   position {
-    x: 18.0
-    y: -29.0
+    x: 143.0
+    y: 252.0
     z: 1.0
   }
   rotation {
@@ -23,8 +23,8 @@ collection_instances {
   id: "zombie"
   collection: "/main/zombie.collection"
   position {
-    x: 384.0
-    y: -29.0
+    x: 991.0
+    y: 253.0
     z: 1.0
   }
   rotation {
@@ -59,8 +59,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -696.0
-    y: -160.0
+    x: 312.0
+    y: 84.0
     z: 0.0
   }
   rotation {
