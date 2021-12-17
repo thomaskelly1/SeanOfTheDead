@@ -1,23 +1,23 @@
 animations {
   id: "idle"
   images {
-    image: "/assets/Sean/idle/idle-1.png"
+    image: "/assets/player/idle/idle-1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/Sean/idle/idle-2.png"
+    image: "/assets/player/idle/idle-2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/Sean/idle/idle-3.png"
+    image: "/assets/player/idle/idle-3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/Sean/idle/idle-4.png"
+    image: "/assets/player/idle/idle-4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/Sean/idle/idle-5.png"
+    image: "/assets/player/idle/idle-5.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
