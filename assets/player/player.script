@@ -6,7 +6,7 @@ local move_acceleration = 3500
 -- acceleration factor to use when air-borne
 local air_acceleration_factor = 0.8
 -- max speed right/left
-local max_speed = 450
+local max_speed = 50
 -- gravity pulling the player down in pixel units
 local gravity = -1000
 -- take-off speed when jumping in pixel units
@@ -22,10 +22,10 @@ local input_left = hash("Left")
 local input_right = hash("Right")
 local input_jump = hash("Jump")
 local input_touch = hash("touch")
-local anim_run = hash("idle")
+local anim_walk = hash("walk")
 local anim_idle = hash("idle")
-local anim_jump = hash("idle")
-local anim_fall = hash("idle")
+local anim_attack = hash("Attack")
+local anim_hit = hash("Hit")
 
 function init(self)
 	-- this lets us handle input in this script
