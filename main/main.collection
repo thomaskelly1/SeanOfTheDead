@@ -1,4 +1,124 @@
 name: "main"
+instances {
+  id: "player"
+  prototype: "/assets/player/player.go"
+  position {
+    x: 62.0
+    y: -16.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie"
+  collection: "/main/zombie.collection"
+  position {
+    x: 502.0
+    y: -10.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: -0.003053619
+    w: 0.99999535
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie1"
+  collection: "/main/zombie.collection"
+  position {
+    x: 669.0
+    y: -10.0
+    z: 1.0
+  }
+  rotation {
+    x: -0.004999079
+    y: -0.030472197
+    z: 1.5240558E-4
+    w: 0.9995231
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie2"
+  collection: "/main/zombie.collection"
+  position {
+    x: 805.0
+    y: -16.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie3"
+  collection: "/main/zombie.collection"
+  position {
+    x: 971.0
+    y: -17.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie4"
+  collection: "/main/zombie.collection"
+  position {
+    x: 1094.0
+    y: -17.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "level"
@@ -19,8 +139,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -696.0
-    y: -160.0
+    x: 244.0
+    y: -155.0
     z: 0.0
   }
   rotation {
@@ -36,52 +156,21 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "player"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "enemy"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "start-menu"
+  id: "go"
   data: "embedded_components {\n"
-  "  id: \"collectionfactory\"\n"
-  "  type: \"collectionfactory\"\n"
-  "  data: \"prototype: \\\"/start-game/start-game.collection\\\"\\n"
-  "load_dynamically: false\\n"
+  "  id: \"collisionobject\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"/game/level.tilemap\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_STATIC\\n"
+  "mass: 0.0\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"wallsFloor\\\"\\n"
+  "mask: \\\"player\\\"\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: false\\n"
+  "bullet: false\\n"
   "\"\n"
   "  position {\n"
   "    x: 0.0\n"
