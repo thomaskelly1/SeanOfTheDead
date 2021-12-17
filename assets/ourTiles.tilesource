@@ -973,7 +973,7 @@ convex_hulls {
 convex_hulls {
   index: 1529
   count: 12
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 1541
@@ -993,7 +993,7 @@ convex_hulls {
 convex_hulls {
   index: 1577
   count: 14
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 1591
@@ -1083,17 +1083,17 @@ convex_hulls {
 convex_hulls {
   index: 1723
   count: 12
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 1735
   count: 12
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 1747
   count: 12
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 1759
@@ -1103,7 +1103,7 @@ convex_hulls {
 convex_hulls {
   index: 1771
   count: 14
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 1785
