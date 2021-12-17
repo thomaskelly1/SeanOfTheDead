@@ -1,7 +1,7 @@
 local move_acceleration=100
 local max_speed=50
 
-local gravity=-100
+local gravity= 0 
 local ground_contact=false
 local wall_contact=false
 
