@@ -23,8 +23,88 @@ collection_instances {
   id: "zombie"
   collection: "/main/zombie.collection"
   position {
+    x: 502.0
+    y: -10.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: -0.003053619
+    w: 0.99999535
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie1"
+  collection: "/main/zombie.collection"
+  position {
     x: 669.0
     y: -10.0
+    z: 1.0
+  }
+  rotation {
+    x: -0.004999079
+    y: -0.030472197
+    z: 1.5240558E-4
+    w: 0.9995231
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie2"
+  collection: "/main/zombie.collection"
+  position {
+    x: 805.0
+    y: -16.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie3"
+  collection: "/main/zombie.collection"
+  position {
+    x: 971.0
+    y: -17.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.5
+    y: 2.5
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "zombie4"
+  collection: "/main/zombie.collection"
+  position {
+    x: 1094.0
+    y: -17.0
     z: 1.0
   }
   rotation {

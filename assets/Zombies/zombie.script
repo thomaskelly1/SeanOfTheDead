@@ -1,5 +1,5 @@
-local move_acceleration=100
-local max_speed=50
+local move_acceleration = 8
+local max_speed = 1
 
 local gravity= 0 
 local ground_contact=false
@@ -96,7 +96,7 @@ local function handle_obstacle_contact(self,normal,distance)
 	go.set_position(go.get_position()+comp)
 
 	if normal.y > 0.7 then
-		self.ground_contact=true
+		self.ground_contact=false
 	end
 
 	proj=vmath.dot(self.velocity, normal)

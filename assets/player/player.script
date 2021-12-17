@@ -2,17 +2,17 @@
 
 -- these are the tweaks for the mechanics, feel free to change them for a different feeling
 -- the acceleration to move right/left
-local move_acceleration = 3500
+local move_acceleration = 4000
 -- acceleration factor to use when air-borne
 local air_acceleration_factor = 0.8
 -- max speed right/left
-local max_speed = 50
+local max_speed = 200
 -- gravity pulling the player down in pixel units
-local gravity = -1000
+local gravity = -800
 -- take-off speed when jumping in pixel units
 local jump_takeoff_speed = 550
 -- time within a double tap must occur to be considered a jump (only used for mouse/touch controls)
-local touch_jump_timeout = 0.2
+local touch_jump_timeout = 0.1
 
 -- pre-hashing ids improves performance
 local msg_contact_point_response = hash("contact_point_response")
@@ -36,7 +36,7 @@ function init(self)
 	-- support variable to keep track of collisions and separation
 	self.correction = vmath.vector3()
 	-- if the player stands on ground or not
-	self.ground_contact = true
+	self.ground_contact = false
 	-- movement input in the range [-1,1]
 	self.move_input = 0
 	-- the currently playing animation
