@@ -172,7 +172,6 @@ end
 local function abort_jump(self)
 	-- cut the jump short if we are still going up
 	if self.velocity.y > 0 then
-		print("self.velocity.y > 0")
 		-- scale down the upwards speed
 		self.velocity.y = self.velocity.y * 0.5
 	end
