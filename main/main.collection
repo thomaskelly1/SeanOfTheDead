@@ -5,7 +5,7 @@ instances {
   children: "camera"
   position {
     x: 62.0
-    y: -16.0
+    y: 20.0
     z: 1.0
   }
   rotation {
@@ -44,15 +44,15 @@ collection_instances {
   id: "zombie"
   collection: "/main/zombie.collection"
   position {
-    x: 502.0
-    y: -10.0
+    x: 489.0
+    y: 13.0
     z: 1.0
   }
   rotation {
     x: 0.0
     y: 0.0
-    z: -0.003053619
-    w: 0.99999535
+    z: 0.0
+    w: 1.0
   }
   scale3 {
     x: 2.5
@@ -64,8 +64,8 @@ collection_instances {
   id: "zombie1"
   collection: "/main/zombie.collection"
   position {
-    x: 669.0
-    y: -10.0
+    x: 607.0
+    y: 3.0
     z: 1.0
   }
   rotation {
@@ -84,8 +84,8 @@ collection_instances {
   id: "zombie2"
   collection: "/main/zombie.collection"
   position {
-    x: 805.0
-    y: -16.0
+    x: 712.0
+    y: -7.0
     z: 1.0
   }
   rotation {
@@ -104,8 +104,8 @@ collection_instances {
   id: "zombie3"
   collection: "/main/zombie.collection"
   position {
-    x: 971.0
-    y: -17.0
+    x: 886.0
+    y: 5.0
     z: 1.0
   }
   rotation {
@@ -124,9 +124,9 @@ collection_instances {
   id: "zombie4"
   collection: "/main/zombie.collection"
   position {
-    x: 1094.0
-    y: -17.0
-    z: 1.0
+    x: 1058.0
+    y: 5.0
+    z: 0.0
   }
   rotation {
     x: 0.0
@@ -161,7 +161,7 @@ embedded_instances {
   ""
   position {
     x: 244.0
-    y: -155.0
+    y: -125.0
     z: 0.0
   }
   rotation {
