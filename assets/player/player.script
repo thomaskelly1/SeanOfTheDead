@@ -120,7 +120,7 @@ function update(self, dt)
 	-- reset volatile state
 	self.correction = vmath.vector3()
 	self.move_input = 0
-	self.ground_contact = true
+	self.ground_contact = false
 
 end
 
@@ -172,6 +172,7 @@ end
 local function abort_jump(self)
 	-- cut the jump short if we are still going up
 	if self.velocity.y > 0 then
+		print("self.velocity.y > 0")
 		-- scale down the upwards speed
 		self.velocity.y = self.velocity.y * 0.5
 	end
