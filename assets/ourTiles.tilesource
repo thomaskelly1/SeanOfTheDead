@@ -338,7 +338,7 @@ convex_hulls {
 convex_hulls {
   index: 561
   count: 4
-  collision_group: ""
+  collision_group: "wallsFloor"
 }
 convex_hulls {
   index: 565

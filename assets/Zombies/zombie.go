@@ -1,9 +1,9 @@
 components {
-  id: "player"
-  component: "/assets/player/player.sprite"
+  id: "Zombie"
+  component: "/assets/Zombies/Zombie.sprite"
   position {
     x: 0.0
-    y: 16.0
+    y: 0.0
     z: 0.0
   }
   rotation {
@@ -14,8 +14,8 @@ components {
   }
 }
 components {
-  id: "player1"
-  component: "/assets/player/player.script"
+  id: "zombie"
+  component: "/assets/Zombies/zombie.script"
   position {
     x: 0.0
     y: 0.0
@@ -29,21 +29,21 @@ components {
   }
 }
 embedded_components {
-  id: "playerCollisionobject"
+  id: "collisionobject"
   type: "collisionobject"
   data: "collision_shape: \"\"\n"
   "type: COLLISION_OBJECT_TYPE_KINEMATIC\n"
   "mass: 0.0\n"
   "friction: 0.1\n"
   "restitution: 0.5\n"
-  "group: \"player\"\n"
-  "mask: \"wallsFloor\"\n"
+  "group: \"default\"\n"
+  "mask: \"default\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_SPHERE\n"
   "    position {\n"
-  "      x: -1.0\n"
-  "      y: 9.0\n"
+  "      x: 0.0\n"
+  "      y: -6.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"

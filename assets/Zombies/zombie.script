@@ -1,7 +1,7 @@
 local move_acceleration = 8
 local max_speed = 1
 
-local gravity= 0 
+local gravity= -200 
 local ground_contact=false
 local wall_contact=false
 
@@ -75,13 +75,12 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	-- Add message-handling code here
-	-- Learn more: https://defold.com/manuals/message-passing/
-	-- Remove this function if not needed
-
 	if message_id == msg_contact_point_response then
+		
 		if message_group == group_obstacle then
-			handle_obstacle_contact(self, message.normal,message.distance)
+			
+			handle_obstacle_contact(self, message.normal, message.distance)
+			
 		end
 	end
 end
