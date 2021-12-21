@@ -4,8 +4,8 @@ instances {
   prototype: "/assets/player/player.go"
   children: "camera"
   position {
-    x: 62.0
-    y: 20.0
+    x: -50.0
+    y: 350.0
     z: 1.0
   }
   rotation {
@@ -40,92 +40,12 @@ instances {
     z: 1.0
   }
 }
-collection_instances {
+instances {
   id: "zombie"
-  collection: "/main/zombie.collection"
+  prototype: "/assets/Zombies/zombie.go"
   position {
-    x: 489.0
-    y: 13.0
-    z: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 2.5
-    y: 2.5
-    z: 1.0
-  }
-}
-collection_instances {
-  id: "zombie1"
-  collection: "/main/zombie.collection"
-  position {
-    x: 607.0
-    y: 3.0
-    z: 1.0
-  }
-  rotation {
-    x: -0.004999079
-    y: -0.030472197
-    z: 1.5240558E-4
-    w: 0.9995231
-  }
-  scale3 {
-    x: 2.5
-    y: 2.5
-    z: 1.0
-  }
-}
-collection_instances {
-  id: "zombie2"
-  collection: "/main/zombie.collection"
-  position {
-    x: 712.0
-    y: -7.0
-    z: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 2.5
-    y: 2.5
-    z: 1.0
-  }
-}
-collection_instances {
-  id: "zombie3"
-  collection: "/main/zombie.collection"
-  position {
-    x: 886.0
-    y: 5.0
-    z: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 2.5
-    y: 2.5
-    z: 1.0
-  }
-}
-collection_instances {
-  id: "zombie4"
-  collection: "/main/zombie.collection"
-  position {
-    x: 1058.0
-    y: 5.0
+    x: 34.0
+    y: 576.0
     z: 0.0
   }
   rotation {
@@ -135,8 +55,8 @@ collection_instances {
     w: 1.0
   }
   scale3 {
-    x: 2.5
-    y: 2.5
+    x: 1.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -168,6 +88,7 @@ embedded_instances {
   "restitution: 0.5\\n"
   "group: \\\"wallsFloor\\\"\\n"
   "mask: \\\"player\\\"\\n"
+  "mask: \\\"zombie\\\"\\n"
   "linear_damping: 0.0\\n"
   "angular_damping: 0.0\\n"
   "locked_rotation: false\\n"
@@ -187,49 +108,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 244.0
-    y: -125.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "go"
-  data: "embedded_components {\n"
-  "  id: \"camera\"\n"
-  "  type: \"camera\"\n"
-  "  data: \"aspect_ratio: 1.0\\n"
-  "fov: 0.785\\n"
-  "near_z: 0.1\\n"
-  "far_z: 1000.0\\n"
-  "auto_aspect_ratio: 0\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
+    x: 23.0
+    y: 100.0
     z: 0.0
   }
   rotation {
