@@ -57,7 +57,7 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "attack"
+  id: "fire"
   images {
     image: "/assets/player/attack/attack-1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
@@ -74,7 +74,7 @@ animations {
     image: "/assets/player/attack/attack-4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
-  playback: PLAYBACK_LOOP_FORWARD
+  playback: PLAYBACK_ONCE_PINGPONG
   fps: 12
   flip_horizontal: 0
   flip_vertical: 0
