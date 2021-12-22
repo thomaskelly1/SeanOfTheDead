@@ -1,11 +1,10 @@
 name: "main"
 instances {
-  id: "player"
+  id: "player01"
   prototype: "/assets/player/player.go"
-  children: "camera"
   position {
-    x: 215.0
-    y: 235.0
+    x: 273.0
+    y: 346.0
     z: 1.0
   }
   rotation {
@@ -17,35 +16,15 @@ instances {
   scale3 {
     x: 2.5
     y: 2.5
-    z: 1.0
-  }
-}
-instances {
-  id: "camera"
-  prototype: "/rendercam/camera.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    z: 0.775
   }
 }
 instances {
   id: "zombie"
   prototype: "/assets/zombie/zombie.go"
   position {
-    x: 1192.0
-    y: 246.0
+    x: 615.0
+    y: 343.0
     z: 1.0
   }
   rotation {
@@ -81,14 +60,130 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"geometry\"\n"
   "  type: \"collisionobject\"\n"
-  "  data: \"collision_shape: \\\"/game/level.tilemap\\\"\\n"
+  "  data: \"collision_shape: \\\"\\\"\\n"
   "type: COLLISION_OBJECT_TYPE_STATIC\\n"
   "mass: 0.0\\n"
   "friction: 0.0\\n"
   "restitution: 0.5\\n"
-  "group: \\\"\\\"\\n"
+  "group: \\\"wallsFloor\\\"\\n"
   "mask: \\\"player\\\"\\n"
   "mask: \\\"zombie\\\"\\n"
+  "embedded_collision_shape {\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: -469.0\\n"
+  "      y: 301.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 0\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 711.0\\n"
+  "      y: 119.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 3\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 1902.0\\n"
+  "      y: 295.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 6\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 721.0\\n"
+  "      y: 356.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 9\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 943.0\\n"
+  "      y: 262.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 12\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 494.0\\n"
+  "      y: 257.0\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 15\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  data: 224.0\\n"
+  "  data: 340.0\\n"
+  "  data: 10.0\\n"
+  "  data: 980.0\\n"
+  "  data: 10.0\\n"
+  "  data: 10.0\\n"
+  "  data: 224.0\\n"
+  "  data: 340.0\\n"
+  "  data: 10.0\\n"
+  "  data: 260.0\\n"
+  "  data: 35.0\\n"
+  "  data: 10.0\\n"
+  "  data: 30.0\\n"
+  "  data: 60.0\\n"
+  "  data: 10.0\\n"
+  "  data: 30.0\\n"
+  "  data: 60.0\\n"
+  "  data: 10.0\\n"
+  "}\\n"
   "linear_damping: 0.0\\n"
   "angular_damping: 0.0\\n"
   "locked_rotation: false\\n"
@@ -108,8 +203,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 9.0
-    y: 64.0
+    x: 23.0
+    y: 100.0
     z: 0.0
   }
   rotation {
