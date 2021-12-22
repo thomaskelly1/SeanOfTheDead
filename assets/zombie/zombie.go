@@ -1,6 +1,6 @@
 components {
   id: "Zombie"
-  component: "/assets/Zombies/Zombie.sprite"
+  component: "/assets/zombie/Zombie.sprite"
   position {
     x: 0.0
     y: 0.0
@@ -15,7 +15,7 @@ components {
 }
 components {
   id: "zombie"
-  component: "/assets/Zombies/zombie.script"
+  component: "/assets/zombie/zombie.script"
   position {
     x: 0.0
     y: 0.0

@@ -1,4 +1,4 @@
--- player.script
+-- zombie.script
 
 -- these are the tweaks for the mechanics, feel free to change them for a different feeling
 -- the acceleration to move right/left
@@ -26,7 +26,7 @@ local input_attack = hash("attack")
 local anim_walk = hash("walk")
 local anim_idle = hash("idle")
 local anim_attack = hash("fire")
-local anim_hit = hash("Hit")
+local anim_hit = hash("hit")
 
 function init(self)
 	-- this lets us handle input in this script
@@ -183,7 +183,7 @@ function on_input(self, action_id, action)
 	elseif action_id == input_right then
 		self.move_input = action.value
 	elseif action_id == input_attack then
-		print("anim_attack requested")
+		--print("anim_attack requested")
 		msg.post("#zombie", "play_animation", { id = hash("fire") })
 		update_animations(self)
 	elseif action_id == input_jump then

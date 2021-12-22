@@ -42,7 +42,7 @@ instances {
 }
 instances {
   id: "zombie"
-  prototype: "/assets/Zombies/zombie.go"
+  prototype: "/assets/zombie/zombie.go"
   position {
     x: 1192.0
     y: 246.0
