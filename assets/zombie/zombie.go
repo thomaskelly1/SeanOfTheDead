@@ -1,6 +1,6 @@
 components {
-  id: "Zombie"
-  component: "/assets/zombie/Zombie.sprite"
+  id: "zombie"
+  component: "/assets/zombie/zombie.sprite"
   position {
     x: 0.0
     y: 0.0
@@ -14,7 +14,7 @@ components {
   }
 }
 components {
-  id: "zombie"
+  id: "Zombie"
   component: "/assets/zombie/zombie.script"
   position {
     x: 0.0
@@ -61,6 +61,52 @@ embedded_components {
   "angular_damping: 0.0\n"
   "locked_rotation: false\n"
   "bullet: false\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "zombie_jump"
+  type: "sound"
+  data: "sound: \"/assets/zombie/sound/zombie_jump.wav\"\n"
+  "looping: 0\n"
+  "group: \"master\"\n"
+  "gain: 1.0\n"
+  "pan: 0.0\n"
+  "speed: 1.0\n"
+  "loopcount: 0\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "zombie_sword"
+  type: "sound"
+  data: "sound: \"/assets/zombie/sound/zombie_sword.wav\"\n"
+  "looping: 0\n"
+  "group: \"master\"\n"
+  "gain: 1.0\n"
+  "pan: 0.0\n"
+  "speed: 1.0\n"
+  "loopcount: 0\n"
   ""
   position {
     x: 0.0
