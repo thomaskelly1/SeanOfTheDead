@@ -4,6 +4,7 @@ function init(self)
 	-- Remove this function if not needed
 	--self.curAnim = "idle"
 	--msg.post("#start-game", "play_animation", { id=hash("idle") })
+	--collectionfactory.create("#collectionfactory")
 	msg.post(".","acquire_input_focus")
 end
 

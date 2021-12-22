@@ -1,4 +1,5 @@
 local function load_start_menu(self)
+	sound.play("sound#main_menu_background")
 	msg.post("go#start-game", "load")
 	msg.post("go#start-game", "enable")
 end
@@ -10,9 +11,11 @@ local function load_main_menu(self)
 	msg.post("go#mainmenu", "enable")
 end
 local function unload_main_menu(self)
+	sound.stop("sound#main_menu_background")
 	msg.post("go#mainmenu", "unload")
 end
 local function load_main(self)
+	sound.play("sound#game_background")
 	msg.post("go#main", "load")
 	msg.post("go#main", "enable")
 end

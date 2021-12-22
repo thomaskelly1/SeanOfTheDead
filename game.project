@@ -1,5 +1,5 @@
 [bootstrap]
-main_collection = /loader/loader.collectionc
+main_collection = /assets/loader.collectionc
 render = /rendercam/rendercam.renderc
 
 [script]

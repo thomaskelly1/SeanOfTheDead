@@ -2,8 +2,8 @@ function init(self)
 	-- Add initialization code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
-	collectionfactory.create("#collectionfactory")
-	msg.post("start-menu-bk-sound#bg-sound", "play_sound")
+	--collectionfactory.create("#collectionfactory")
+	--msg.post("start-menu-bk-sound#bg-sound", "play_sound")
 end
 
 function final(self)
